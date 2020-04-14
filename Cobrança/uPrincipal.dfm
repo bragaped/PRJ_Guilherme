@@ -1,0 +1,117 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 202
+  Top = 113
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  BorderStyle = bsSingle
+  Caption = 'Sistema Controle de Cobran'#231'a'
+  ClientHeight = 463
+  ClientWidth = 719
+  Color = clBlack
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = MenuPrincipal
+  OldCreateOrder = False
+  Position = poScreenCenter
+  WindowState = wsMaximized
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 719
+    Height = 443
+    Align = alClient
+    AutoSize = True
+    Center = True
+    Picture.Data = {
+      055449636F6E0000010001002020100000000000E80200001600000028000000
+      2000000040000000010004000000000080020000000000000000000000000000
+      0000000000000000000080000080000000808000800000008000800080800000
+      80808000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000
+      FFFFFF0000000000000000000000000000000000000000000000000000000000
+      000000000000000B3B3B3B33330000BB3B3000000000B3B3B3B3333333030BB3
+      3033000000033330000000000030BB0B3B3330000003333B8B8383333033BBBB
+      3333300000003333333333330B3B3BB33B3B3B0000000B3B3B3333330B3B33B3
+      BBB3330000B3B3B3B3B333330B3B333BBB333B0003333000000000000B3B33BB
+      BBB3B3000300000B3B3B33330B3B333BB0B33B000030B3B3B3B3B3330B3B333B
+      BBB3B30003033333333333330B33333BBB3B3B000003000B888383830BB33333
+      333BB000000033330000000000B33B3333BB300000033000B3B3B3B3B0BB3333
+      0BBB000000000B3B3B3B3B3B3B0BB33B3BB00000000033333333333333300B33
+      3300000000003000BBB838383830003000000000000003333380000000000000
+      0000000000003338000B3B3B3B3B3B000000000000000330B3B3B3B3B3B3B3B3
+      3000000000000003333FFFFFF33333333300000000000003088BBBB3B3B3B300
+      030000000000000033333BBBBB3B3B33300000000000000333B3B3BBBBB3B3B3
+      3300000000000000333B3BBBBBBB333330000000000000000003B3B3BFFFFB00
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000FFFFFFFFFE003C1FF000000FE0000007C0000003C0000003C0000001
+      C0000001800000010000000100000001000000010000000180000003C0000003
+      C0000007E000000FE000001FE00000FFE00000FFE000007FF000003FF800001F
+      FC00001FFC00001FFC00001FFE00003FFF00007FFFE003FFFFFFFFFFFFFFFFFF
+      FFFFFFFF}
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Top = 443
+    Width = 719
+    Height = 20
+    Panels = <
+      item
+        Width = 350
+      end
+      item
+        Width = 100
+      end
+      item
+        Width = 200
+      end
+      item
+        Alignment = taRightJustify
+        Bevel = pbRaised
+        Width = 100
+      end>
+    ParentShowHint = False
+    ShowHint = False
+  end
+  object MenuPrincipal: TMainMenu
+    Left = 168
+    Top = 72
+    object Arquivo1: TMenuItem
+      Caption = '&Arquivo'
+      object Cobrana1: TMenuItem
+        Caption = '&Cobran'#231'a'
+        ShortCut = 16463
+        OnClick = Cobrana1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Usurio1: TMenuItem
+        Caption = '&Usu'#225'rio'
+        ShortCut = 16469
+        OnClick = Usurio1Click
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Sair2: TMenuItem
+        Caption = '&Sair'
+        ShortCut = 16467
+        OnClick = Sair2Click
+      end
+    end
+    object Help1: TMenuItem
+      Caption = '&Help'
+      Visible = False
+    end
+    object Sair1: TMenuItem
+      Caption = '&Sair'
+      OnClick = Sair2Click
+    end
+  end
+end
